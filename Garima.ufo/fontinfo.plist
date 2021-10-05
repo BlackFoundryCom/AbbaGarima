@@ -10,6 +10,8 @@
     <integer>-250</integer>
     <key>guidelines</key>
     <array/>
+    <key>italicAngle</key>
+    <integer>0</integer>
     <key>postscriptBlueValues</key>
     <array/>
     <key>postscriptFamilyBlues</key>
