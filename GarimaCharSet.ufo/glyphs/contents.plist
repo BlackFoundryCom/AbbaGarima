@@ -18,6 +18,16 @@
     <string>uni121E_.glif</string>
     <key>uni121F</key>
     <string>uni121F_.glif</string>
+    <key>uni1228</key>
+    <string>uni1228.glif</string>
+    <key>uni122D</key>
+    <string>uni122D_.glif</string>
+    <key>uni1260</key>
+    <string>uni1260.glif</string>
+    <key>uni1265</key>
+    <string>uni1265.glif</string>
+    <key>uni1270</key>
+    <string>uni1270.glif</string>
     <key>uni1290</key>
     <string>uni1290.glif</string>
     <key>uni1291</key>
@@ -34,6 +44,8 @@
     <string>uni1296.glif</string>
     <key>uni1297</key>
     <string>uni1297.glif</string>
+    <key>uni12A8</key>
+    <string>uni12A_8.glif</string>
     <key>uni12C8</key>
     <string>uni12C_8.glif</string>
     <key>uni12C9</key>
@@ -60,5 +72,13 @@
     <string>uni12D_E_.glif</string>
     <key>uni12DF</key>
     <string>uni12D_F_.glif</string>
+    <key>uni1308</key>
+    <string>uni1308.glif</string>
+    <key>uni130B</key>
+    <string>uni130B_.glif</string>
+    <key>uni1340</key>
+    <string>uni1340.glif</string>
+    <key>uni1361</key>
+    <string>uni1361.glif</string>
   </dict>
 </plist>
