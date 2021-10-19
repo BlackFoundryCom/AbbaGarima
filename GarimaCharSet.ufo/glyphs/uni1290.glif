@@ -4,9 +4,9 @@
   <unicode hex="1290"/>
   <outline>
     <contour>
-      <point x="188" y="639" type="curve" smooth="yes"/>
-      <point x="173" y="639"/>
-      <point x="159" y="633"/>
+      <point x="198" y="639" type="curve" smooth="yes"/>
+      <point x="178.83333333333334" y="639.0"/>
+      <point x="163" y="634"/>
       <point x="152" y="626" type="curve"/>
       <point x="152" y="562"/>
       <point x="61" y="397"/>
@@ -20,23 +20,29 @@
       <point x="255" y="266"/>
       <point x="148" y="88"/>
       <point x="148" y="31" type="curve" smooth="yes"/>
-      <point x="148" y="4"/>
-      <point x="161" y="-5"/>
-      <point x="182" y="-5" type="curve" smooth="yes"/>
-      <point x="200" y="-5"/>
-      <point x="213" y="2"/>
-      <point x="222" y="19" type="curve"/>
-      <point x="222" y="124"/>
-      <point x="325" y="250"/>
-      <point x="325" y="303" type="curve" smooth="yes"/>
-      <point x="325" y="386"/>
-      <point x="139" y="334"/>
-      <point x="139" y="384" type="curve" smooth="yes"/>
-      <point x="139" y="430"/>
-      <point x="219" y="576"/>
-      <point x="219" y="613" type="curve" smooth="yes"/>
-      <point x="219" y="631"/>
-      <point x="210" y="639"/>
+      <point x="148.0" y="4.0"/>
+      <point x="162.14705882352942" y="-5.0"/>
+      <point x="185" y="-5" type="curve" smooth="yes"/>
+      <point x="206.15" y="-5.0"/>
+      <point x="222.58425433362825" y="1.2147026301867"/>
+      <point x="232" y="19" type="curve"/>
+      <point x="232.0" y="124.0"/>
+      <point x="335.0" y="250.0"/>
+      <point x="335" y="303" type="curve" smooth="yes"/>
+      <point x="335.0" y="386.0"/>
+      <point x="149.0" y="334.0"/>
+      <point x="149" y="384" type="curve" smooth="yes"/>
+      <point x="149.0" y="430.0"/>
+      <point x="229.0" y="576.0"/>
+      <point x="229" y="613" type="curve" smooth="yes"/>
+      <point x="229" y="631"/>
+      <point x="220" y="639"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
 </glyph>
