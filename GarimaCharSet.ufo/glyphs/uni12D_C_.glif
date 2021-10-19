@@ -4,17 +4,22 @@
   <unicode hex="12DC"/>
   <outline>
     <contour>
-      <point x="587" y="373" type="line"/>
-      <point x="578" y="374"/>
-      <point x="569" y="376"/>
-      <point x="533" y="370" type="curve" smooth="yes"/>
-      <point x="423" y="354"/>
-      <point x="328" y="338"/>
+      <point x="642" y="391" type="curve"/>
+      <point x="631" y="386"/>
+      <point x="618" y="381"/>
+      <point x="573" y="374" type="curve" smooth="yes"/>
+      <point x="452" y="355"/>
+      <point x="347" y="340"/>
       <point x="146" y="323" type="curve"/>
       <point x="140" y="265" type="line"/>
-      <point x="274" y="282"/>
-      <point x="448" y="314"/>
-      <point x="585" y="321" type="curve"/>
+      <point x="286" y="284"/>
+      <point x="476" y="313"/>
+      <point x="625" y="321" type="curve"/>
+      <point x="646" y="321.0"/>
+      <point x="656" y="331"/>
+      <point x="656.0" y="348" type="curve" smooth="yes"/>
+      <point x="656.0" y="362.0"/>
+      <point x="650" y="381"/>
     </contour>
     <contour>
       <point x="87" y="-2" type="curve" smooth="yes"/>
