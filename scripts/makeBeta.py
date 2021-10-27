@@ -16,22 +16,19 @@ margins = 50
 
 pdfDoc = PDFDocument("proofing/%s_Garima.pdf" % prfx)
 with pdfDoc.drawing() as db:
-    numFonts = len(fontPaths)
-
-
-db.newPage('A4')
-db.font('beta/%s_Garima.otf' % prfx)
-db.fontSize(18)
-
-txt = open('proofing/GarimaGospelText.txt', 'r').read()
-txt = db.textBox(txt, (margins, margins, db.width()*.5-margins*2, db.height()-margins*2))
-if txt:
-	txt = db.textBox(txt, (db.width()*.5, margins, db.width()*.5-margins*3, db.height()-margins*2))
-while txt:
 	db.newPage('A4')
 	db.font('beta/%s_Garima.otf' % prfx)
 	db.fontSize(18)
+
+	txt = open('proofing/GarimaGospelText.txt', 'r').read()
 	txt = db.textBox(txt, (margins, margins, db.width()*.5-margins*2, db.height()-margins*2))
 	if txt:
 		txt = db.textBox(txt, (db.width()*.5, margins, db.width()*.5-margins*3, db.height()-margins*2))
+	while txt:
+		db.newPage('A4')
+		db.font('beta/%s_Garima.otf' % prfx)
+		db.fontSize(18)
+		txt = db.textBox(txt, (margins, margins, db.width()*.5-margins*2, db.height()-margins*2))
+		if txt:
+			txt = db.textBox(txt, (db.width()*.5, margins, db.width()*.5-margins*3, db.height()-margins*2))
 
