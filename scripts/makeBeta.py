@@ -57,20 +57,20 @@ with doc.drawing() as db:
 
 	txt = open('proofing/glyphSet.txt', 'r').readlines()
 	j = fSize
-	t = fSize
+	t = fSize*.5
 	for l in txt:
 		l = l.strip()
 		for e in l:
 			db.text(e, (margins+t, pageHeight-(margins+j)), align='center')
 			t += fSize*2
 			if t > pageWidth - 2*margins:
-				t = fSize
+				t = fSize*.5
 				j += fLeading
 			if j >= pageHeight - 2*margins:
 				db.newPage(pageWidth, pageHeight)
 				db.font('beta/%s_Garima.otf' % prfx)
-				db.fontSize(18)
+				db.fontSize(fSize)
 				j = fSize
-				t = fSize
+				t = fSize*.5
 		
 			
