@@ -14,7 +14,7 @@ otf.save('beta/%s_Garima.otf' % prfx)
 # make a PDF proof
 margins = 50
 fSize = 18
-fLeading = 20
+fLeading = fSize*1.2
 pageHeight = 842
 pageWidth = 595
 
@@ -24,7 +24,7 @@ doc = PDFDocument(pdfPath)
 with doc.drawing() as db:
 	db.newPage(pageWidth, pageHeight)
 	db.font('beta/%s_Garima.otf' % prfx)
-	db.fontSize(18)
+	db.fontSize(fSize)
 
 	txt = open('proofing/GarimaGospelText.txt', 'r').readlines()
 	j = 0
@@ -42,3 +42,25 @@ with doc.drawing() as db:
 		elif j >= pageHeight - 2*margins:
 			j = 0
 			col = pageWidth*.5 - margins
+
+# make a PDF proof for glyph-set
+pdfPath = 'proofing/%s_GlyphSet.pdf' % prfx
+doc = PDFDocument(pdfPath)
+
+with doc.drawing() as db:
+	db.newPage(pageWidth, pageHeight)
+	db.font('beta/%s_Garima.otf' % prfx)
+	db.fontSize(48)
+
+	txt = open('proofing/glyphSet.txt', 'r').readlines()
+	j = 0
+	for l in txt:
+		l = l.strip()
+		db.text(l, (margins, pageHeight-(margins+j)))
+		j += fLeading
+		if j >= pageHeight - 2*margins:
+			db.newPage(pageWidth, pageHeight)
+			db.font('beta/%s_Garima.otf' % prfx)
+			db.fontSize(18)
+			j = 0
+			

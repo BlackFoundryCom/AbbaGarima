@@ -210,6 +210,8 @@
       <dict>
         <key>ascending</key>
         <array>
+          <string>.notdef</string>
+          <string>space</string>
           <string>uni1200</string>
           <string>uni1201</string>
           <string>uni1202</string>
@@ -469,7 +471,6 @@
           <string>uni1398</string>
           <string>uni1399</string>
           <string>uniF4C2</string>
-          <string>Z</string>
         </array>
         <key>type</key>
         <string>glyphList</string>
@@ -497,6 +498,8 @@
     <string>4793955408</string>
     <key>public.glyphOrder</key>
     <array>
+      <string>.notdef</string>
+      <string>space</string>
       <string>uni1200</string>
       <string>uni1201</string>
       <string>uni1202</string>
