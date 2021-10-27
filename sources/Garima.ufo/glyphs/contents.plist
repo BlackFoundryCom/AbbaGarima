@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>Z</key>
-    <string>Z_.glif</string>
     <key>uni1200</key>
     <string>uni1200.glif</string>
     <key>uni1201</key>
