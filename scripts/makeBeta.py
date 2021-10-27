@@ -44,13 +44,16 @@ with doc.drawing() as db:
 			col = pageWidth*.5 - margins
 
 # make a PDF proof for glyph-set
+fSize = 64
+fLeading = fSize*1.2
+
 pdfPath = 'proofing/%s_GlyphSet.pdf' % prfx
 doc = PDFDocument(pdfPath)
 
 with doc.drawing() as db:
 	db.newPage(pageWidth, pageHeight)
 	db.font('beta/%s_Garima.otf' % prfx)
-	db.fontSize(64)
+	db.fontSize(fSize)
 
 	txt = open('proofing/glyphSet.txt', 'r').readlines()
 	j = fSize
