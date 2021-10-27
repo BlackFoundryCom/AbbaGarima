@@ -19,7 +19,7 @@ fLeading = 20
 pageHeight = 842
 pageWidth = 595
 
-pdfPath = pathlib.Path("proofing/%s_Garima.pdf" % prfx).resolve()
+pdfPath = pathlib.Path("proofing/%s_Garima.pdf" % prfx)
 pdfDoc = PDFDocument(pdfPath)
 with pdfDoc.drawing() as db:
 	db.newPage(pageWidth, pageHeight)
@@ -41,3 +41,4 @@ with pdfDoc.drawing() as db:
 			db.fontSize(18)
 			j = 0
 			col = 0
+	db.saveImage(pdfPath)
