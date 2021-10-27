@@ -64,7 +64,7 @@ with doc.drawing() as db:
 		l = l.strip()
 		for e in l:
 			db.text(e, (margins+t, pageHeight-(margins+j)), align='center')
-			t += fSize*2
+			t += fSize*1.5
 			if t > pageWidth - 2*margins:
 				t = fSize*.5
 				j += fLeading
