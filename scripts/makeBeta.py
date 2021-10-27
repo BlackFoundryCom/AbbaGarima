@@ -13,22 +13,29 @@ otf.save('beta/%s_Garima.otf' % prfx)
 # make a PDF proof
 
 margins = 50
+fSize = 18
+fLeading = 20
+pageHeight = 842
+pageWidth = 595
 
 pdfDoc = PDFDocument("proofing/%s_Garima.pdf" % prfx)
 with pdfDoc.drawing() as db:
-	db.newPage(595, 842)
+	db.newPage(pageWidth, pageHeight)
 	db.font('beta/%s_Garima.otf' % prfx)
 	db.fontSize(18)
 
-	txt = open('proofing/GarimaGospelText.txt', 'r').read()
-	txt = db.textBox(txt, (margins, margins, db.width()*.5-margins*2, db.height()-margins*2))
-	if txt:
-		txt = db.textBox(txt, (db.width()*.5, margins, db.width()*.5-margins*3, db.height()-margins*2))
-	while txt:
-		db.newPage('A4')
-		db.font('beta/%s_Garima.otf' % prfx)
-		db.fontSize(18)
-		txt = db.textBox(txt, (margins, margins, db.width()*.5-margins*2, db.height()-margins*2))
-		if txt:
-			txt = db.textBox(txt, (db.width()*.5, margins, db.width()*.5-margins*3, db.height()-margins*2))
-
+	txt = open('proofing/GarimaGospelText.txt', 'r').readlines()
+	j = 0
+	col = 0
+	for l in txt:
+		db.text(l, (margins+col, margins+j))
+		j += fLeading
+		if j >= pageHeight - margins:
+			j = 0
+			col = pageWidth*.5 - margins
+		if col > 0 and j >= pageHeight - margins:
+			db.newPage(pageWidth, pageHeight)
+			db.font('beta/%s_Garima.otf' % prfx)
+			db.fontSize(18)
+			j = 0
+			col = 0
