@@ -30,6 +30,7 @@ with doc.drawing() as db:
 	j = 0
 	col = 0
 	for l in txt:
+		l = l.strip()
 		db.text(l, (margins+col, pageHeight-(margins+j)))
 		j += fLeading
 		if col > 0 and j >= pageHeight - 2*margins:
