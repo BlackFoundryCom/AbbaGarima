@@ -12,7 +12,6 @@ otf = compileOTF(ufo, removeOverlaps=True)
 otf.save('beta/%s_Garima.otf' % prfx)
 
 # make a PDF proof
-
 margins = 50
 fSize = 18
 fLeading = 20
@@ -31,15 +30,14 @@ with doc.drawing() as db:
 	j = 0
 	col = 0
 	for l in txt:
-		db.text(l, (margins+col, margins+j))
+		db.text(l, (margins+col, pageHeight-(margins+j)))
 		j += fLeading
-		if j >= pageHeight - margins:
-			j = 0
-			col = pageWidth*.5 - margins
-		if col > 0 and j >= pageHeight - margins:
+		if col > 0 and j >= pageHeight - 2*margins:
 			db.newPage(pageWidth, pageHeight)
 			db.font('beta/%s_Garima.otf' % prfx)
 			db.fontSize(18)
 			j = 0
 			col = 0
-			
+		elif j >= pageHeight - 2*margins:
+			j = 0
+			col = pageWidth*.5 - margins
