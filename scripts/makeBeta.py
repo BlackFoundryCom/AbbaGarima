@@ -57,16 +57,17 @@ with doc.drawing() as db:
 	t = fSize
 	for l in txt:
 		l = l.strip()
-		db.text(l, (margins+t, pageHeight-(margins+j)), align='center')
-		t += fSize*2
-		if t > pageWidth - 2*margins:
-			t = fSize
-			j += fLeading
-		if j >= pageHeight - 2*margins:
-			db.newPage(pageWidth, pageHeight)
-			db.font('beta/%s_Garima.otf' % prfx)
-			db.fontSize(18)
-			j = fSize
-			t = fSize
+		for e in l:
+			db.text(e, (margins+t, pageHeight-(margins+j)), align='center')
+			t += fSize*2
+			if t > pageWidth - 2*margins:
+				t = fSize
+				j += fLeading
+			if j >= pageHeight - 2*margins:
+				db.newPage(pageWidth, pageHeight)
+				db.font('beta/%s_Garima.otf' % prfx)
+				db.fontSize(18)
+				j = fSize
+				t = fSize
 		
 			
