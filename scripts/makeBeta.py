@@ -22,7 +22,7 @@ pageWidth = 595
 pdfPath = 'proofing/%s_Garima.pdf' % prfx
 doc = PDFDocument(pdfPath)
 
-with doc.drawing() as db
+with doc.drawing() as db:
 	db.newPage(pageWidth, pageHeight)
 	db.font('beta/%s_Garima.otf' % prfx)
 	db.fontSize(18)
