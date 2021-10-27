@@ -1,6 +1,7 @@
 from datetime import datetime
 from defcon import Font
 from ufo2ft import compileOTF
+import pathlib
 from drawbot_skia.document import PDFDocument
 from drawbot_skia.drawing import Drawing
 
