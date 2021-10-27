@@ -46,6 +46,8 @@ with doc.drawing() as db:
 # make a PDF proof for glyph-set
 fSize = 64
 fLeading = fSize*1.2
+pageHeight = 595
+pageWidth = 842
 
 pdfPath = 'proofing/%s_GlyphSet.pdf' % prfx
 doc = PDFDocument(pdfPath)
@@ -56,7 +58,7 @@ with doc.drawing() as db:
 	db.fontSize(fSize)
 
 	txt = open('proofing/glyphSet.txt', 'r').readlines()
-	j = fSize
+	j = fSize*.5
 	t = fSize*.5
 	for l in txt:
 		l = l.strip()
@@ -70,7 +72,7 @@ with doc.drawing() as db:
 				db.newPage(pageWidth, pageHeight)
 				db.font('beta/%s_Garima.otf' % prfx)
 				db.fontSize(fSize)
-				j = fSize
+				j = fSize*.5
 				t = fSize*.5
 		
 			
