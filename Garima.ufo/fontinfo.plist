@@ -8,9 +8,17 @@
     <integer>632</integer>
     <key>descender</key>
     <integer>-250</integer>
+    <key>familyName</key>
+    <string>Garima</string>
     <key>guidelines</key>
     <array/>
     <key>italicAngle</key>
+    <integer>0</integer>
+    <key>openTypeHheaAscender</key>
+    <integer>850</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-350</integer>
+    <key>openTypeHheaLineGap</key>
     <integer>0</integer>
     <key>postscriptBlueValues</key>
     <array/>
@@ -24,6 +32,8 @@
     <array/>
     <key>postscriptStemSnapV</key>
     <array/>
+    <key>styleName</key>
+    <string>Regular</string>
     <key>unitsPerEm</key>
     <integer>1000</integer>
     <key>xHeight</key>
