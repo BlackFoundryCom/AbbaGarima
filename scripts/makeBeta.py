@@ -16,7 +16,7 @@ margins = 50
 
 pdfDoc = PDFDocument("proofing/%s_Garima.pdf" % prfx)
 with pdfDoc.drawing() as db:
-	db.newPage('A4')
+	db.newPage(595, 842)
 	db.font('beta/%s_Garima.otf' % prfx)
 	db.fontSize(18)
 
