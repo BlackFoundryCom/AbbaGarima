@@ -44,7 +44,7 @@ with doc.drawing() as db:
 			col = pageWidth*.5 - margins
 
 # make a PDF proof for glyph-set
-fSize = 64
+fSize = 72
 fLeading = fSize*1.2
 pageHeight = 595
 pageWidth = 842
