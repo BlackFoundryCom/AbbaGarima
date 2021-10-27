@@ -27,7 +27,7 @@ with doc.drawing() as db:
 	db.fontSize(fSize)
 
 	txt = open('proofing/GarimaGospelText.txt', 'r').readlines()
-	j = 0
+	j = fSize
 	col = 0
 	for l in txt:
 		l = l.strip()
@@ -40,7 +40,7 @@ with doc.drawing() as db:
 			j = 0
 			col = 0
 		elif j >= pageHeight - 2*margins:
-			j = 0
+			j = fSize
 			col = pageWidth*.5 - margins
 
 # make a PDF proof for glyph-set
@@ -50,17 +50,23 @@ doc = PDFDocument(pdfPath)
 with doc.drawing() as db:
 	db.newPage(pageWidth, pageHeight)
 	db.font('beta/%s_Garima.otf' % prfx)
-	db.fontSize(48)
+	db.fontSize(64)
 
 	txt = open('proofing/glyphSet.txt', 'r').readlines()
-	j = 0
+	j = fSize
+	t = fSize
 	for l in txt:
 		l = l.strip()
-		db.text(l, (margins, pageHeight-(margins+j)))
-		j += fLeading
+		db.text(l, (margins+t, pageHeight-(margins+j)), align='center')
+		t += fSize*2
+		if t > pageWidth - 2*margins:
+			t = fSize
+			j += fLeading
 		if j >= pageHeight - 2*margins:
 			db.newPage(pageWidth, pageHeight)
 			db.font('beta/%s_Garima.otf' % prfx)
 			db.fontSize(18)
-			j = 0
+			j = fSize
+			t = fSize
+		
 			
