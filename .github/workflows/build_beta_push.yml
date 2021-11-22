@@ -34,13 +34,17 @@ jobs:
         run: |
           python scripts/makeBeta.py
 
-      - name: Commit beta font
-        uses: EndBug/add-and-commit@v6
+      - name: Storing report artifacts
+        uses: actions/upload-artifact@master
         with:
-          add: 'beta/*.otf'
+          name: beta font
+          path: beta
+          retention-days: 15
           
-      - name: Commit beta proof
-        uses: EndBug/add-and-commit@v6
+      - name: Storing report artifacts
+        uses: actions/upload-artifact@master
         with:
-          add: 'proofing/*.pdf'
+          name: proofs
+          path: proofing
+          retention-days: 15
     
