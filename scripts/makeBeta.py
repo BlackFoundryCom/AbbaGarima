@@ -11,7 +11,7 @@ prfx = str(datetime.now()).split('.')[0].replace(":", "-").replace(" ", "_")
 ufo = Font('sources/Garima.ufo')
 otf = compileOTF(ufo, removeOverlaps=True)
 if not os.path.exists('beta'):
-    os.makedir('beta')
+    os.makedirs('beta')
 otf.save('beta/%s_Garima.otf' % prfx)
 
 # make a PDF proof
