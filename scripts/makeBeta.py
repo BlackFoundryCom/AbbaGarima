@@ -3,12 +3,15 @@ from defcon import Font
 from ufo2ft import compileOTF
 from drawbot_skia.drawbot import *
 from drawbot_skia.document import PDFDocument
+import os
 
 prfx = str(datetime.now()).split('.')[0].replace(":", "-").replace(" ", "_")
 
 # make the beta font
 ufo = Font('sources/Garima.ufo')
 otf = compileOTF(ufo, removeOverlaps=True)
+if not os.path.exists('beta'):
+    os.makedir('beta')
 otf.save('beta/%s_Garima.otf' % prfx)
 
 # make a PDF proof
