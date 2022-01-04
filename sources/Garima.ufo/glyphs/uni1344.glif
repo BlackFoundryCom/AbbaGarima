@@ -14,15 +14,15 @@
       <point x="98" y="125"/>
       <point x="124" y="125" type="curve" smooth="yes"/>
       <point x="146" y="125"/>
-      <point x="158" y="128"/>
-      <point x="175" y="132" type="curve"/>
-      <point x="173" y="142"/>
-      <point x="171" y="152"/>
-      <point x="171" y="167" type="curve" smooth="yes"/>
-      <point x="171" y="228"/>
-      <point x="272" y="501"/>
-      <point x="272" y="544" type="curve" smooth="yes"/>
-      <point x="272" y="564"/>
+      <point x="163" y="128"/>
+      <point x="180" y="132" type="curve"/>
+      <point x="178" y="142"/>
+      <point x="176" y="152"/>
+      <point x="176" y="167" type="curve" smooth="yes"/>
+      <point x="176" y="228"/>
+      <point x="277" y="501"/>
+      <point x="277" y="544" type="curve" smooth="yes"/>
+      <point x="277" y="564"/>
       <point x="263" y="573"/>
       <point x="245" y="573" type="curve" smooth="yes"/>
     </contour>
@@ -78,15 +78,15 @@
       <point x="147" y="514"/>
       <point x="157" y="504" type="curve"/>
       <point x="251" y="534"/>
-      <point x="414" y="538"/>
-      <point x="470" y="538" type="curve" smooth="yes"/>
-      <point x="481" y="538"/>
-      <point x="488" y="534"/>
-      <point x="488" y="519" type="curve" smooth="yes"/>
-      <point x="488" y="390"/>
-      <point x="400" y="159"/>
-      <point x="400" y="105" type="curve" smooth="yes"/>
-      <point x="400" y="20"/>
+      <point x="407" y="538"/>
+      <point x="463" y="538" type="curve" smooth="yes"/>
+      <point x="474" y="538"/>
+      <point x="481" y="534"/>
+      <point x="481" y="519" type="curve" smooth="yes"/>
+      <point x="481" y="390"/>
+      <point x="393" y="159"/>
+      <point x="393" y="105" type="curve" smooth="yes"/>
+      <point x="393" y="20"/>
       <point x="478" y="-11"/>
       <point x="551" y="-11" type="curve" smooth="yes"/>
       <point x="648" y="-11"/>
@@ -103,7 +103,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,1,0,1</string>
+      <string>0,0,1,1</string>
     </dict>
   </lib>
 </glyph>

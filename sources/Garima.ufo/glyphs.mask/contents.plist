@@ -176,6 +176,10 @@
     <string>uni128A_.glif</string>
     <key>uni128B</key>
     <string>uni128B_.glif</string>
+    <key>uni128C</key>
+    <string>uni128C_.glif</string>
+    <key>uni128D</key>
+    <string>uni128D_.glif</string>
     <key>uni1290</key>
     <string>uni1290.glif</string>
     <key>uni1291</key>
@@ -354,5 +358,7 @@
     <string>uni134D_.glif</string>
     <key>uni134E</key>
     <string>uni134E_.glif</string>
+    <key>uni134F</key>
+    <string>uni134F_.glif</string>
   </dict>
 </plist>
