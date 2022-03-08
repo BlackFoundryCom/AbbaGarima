@@ -72,10 +72,4 @@
       <point x="305" y="190" type="curve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0,1,1</string>
-    </dict>
-  </lib>
 </glyph>

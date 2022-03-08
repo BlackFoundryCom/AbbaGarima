@@ -126,6 +126,8 @@
     <string>uni124A_.glif</string>
     <key>uni124B</key>
     <string>uni124B_.glif</string>
+    <key>uni124C</key>
+    <string>uni124C_.glif</string>
     <key>uni124D</key>
     <string>uni124D_.glif</string>
     <key>uni1260</key>
@@ -250,6 +252,8 @@
     <string>uni12C_E_.glif</string>
     <key>uni12D0</key>
     <string>uni12D_0.glif</string>
+    <key>uni12D4</key>
+    <string>uni12D_4.glif</string>
     <key>uni12D5</key>
     <string>uni12D_5.glif</string>
     <key>uni12D6</key>
@@ -360,5 +364,7 @@
     <string>uni134E_.glif</string>
     <key>uni134F</key>
     <string>uni134F_.glif</string>
+    <key>uni1354</key>
+    <string>uni1354.glif</string>
   </dict>
 </plist>
