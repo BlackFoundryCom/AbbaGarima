@@ -11,7 +11,28 @@
     <key>familyName</key>
     <string>Garima</string>
     <key>guidelines</key>
-    <array/>
+    <array>
+      <dict>
+        <key>angle</key>
+        <integer>0</integer>
+        <key>identifier</key>
+        <string>xsShPn7BYI</string>
+        <key>x</key>
+        <integer>553</integer>
+        <key>y</key>
+        <integer>567</integer>
+      </dict>
+      <dict>
+        <key>angle</key>
+        <integer>0</integer>
+        <key>identifier</key>
+        <string>l6FkJfMMrX</string>
+        <key>x</key>
+        <integer>265</integer>
+        <key>y</key>
+        <integer>-29</integer>
+      </dict>
+    </array>
     <key>italicAngle</key>
     <integer>0</integer>
     <key>openTypeHheaAscender</key>
