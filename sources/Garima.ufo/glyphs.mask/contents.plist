@@ -378,10 +378,22 @@
     <string>uni134F_.glif</string>
     <key>uni1354</key>
     <string>uni1354.glif</string>
+    <key>uni1361</key>
+    <string>uni1361.glif</string>
+    <key>uni1362</key>
+    <string>uni1362.glif</string>
+    <key>uni1363</key>
+    <string>uni1363.glif</string>
+    <key>uni1364</key>
+    <string>uni1364.glif</string>
     <key>uni1365</key>
     <string>uni1365.glif</string>
+    <key>uni1366</key>
+    <string>uni1366.glif</string>
     <key>uni1367</key>
     <string>uni1367.glif</string>
+    <key>uni1368</key>
+    <string>uni1368.glif</string>
     <key>uni1369</key>
     <string>uni1369.glif</string>
     <key>uni136A</key>
@@ -400,6 +412,10 @@
     <string>uni1370.glif</string>
     <key>uni1371</key>
     <string>uni1371.glif</string>
+    <key>uni1373</key>
+    <string>uni1373.glif</string>
+    <key>uni1374</key>
+    <string>uni1374.glif</string>
     <key>uni1375</key>
     <string>uni1375.glif</string>
     <key>uni1376</key>
@@ -410,13 +426,21 @@
     <string>uni1378.glif</string>
     <key>uni1379</key>
     <string>uni1379.glif</string>
+    <key>uni137A</key>
+    <string>uni137A_.glif</string>
     <key>uni137B</key>
     <string>uni137B_.glif</string>
+    <key>uni137C</key>
+    <string>uni137C_.glif</string>
+    <key>uni1390</key>
+    <string>uni1390.glif</string>
     <key>uni1392</key>
     <string>uni1392.glif</string>
     <key>uni1393</key>
     <string>uni1393.glif</string>
     <key>uni1394</key>
     <string>uni1394.glif</string>
+    <key>uni1397</key>
+    <string>uni1397.glif</string>
   </dict>
 </plist>
