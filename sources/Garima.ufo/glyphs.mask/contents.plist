@@ -378,6 +378,10 @@
     <string>uni134F_.glif</string>
     <key>uni1354</key>
     <string>uni1354.glif</string>
+    <key>uni1365</key>
+    <string>uni1365.glif</string>
+    <key>uni1367</key>
+    <string>uni1367.glif</string>
     <key>uni1369</key>
     <string>uni1369.glif</string>
     <key>uni136A</key>
@@ -408,5 +412,11 @@
     <string>uni1379.glif</string>
     <key>uni137B</key>
     <string>uni137B_.glif</string>
+    <key>uni1392</key>
+    <string>uni1392.glif</string>
+    <key>uni1393</key>
+    <string>uni1393.glif</string>
+    <key>uni1394</key>
+    <string>uni1394.glif</string>
   </dict>
 </plist>
