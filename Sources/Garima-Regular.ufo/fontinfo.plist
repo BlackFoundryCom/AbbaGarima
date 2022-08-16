@@ -62,7 +62,7 @@
     <key>openTypeNameLicense</key>
     <string>OFL</string>
     <key>openTypeNameLicenseURL</key>
-    <string>https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web</string>
+    <string>https://scripts.sil.org/OFL_web</string>
     <key>openTypeNameManufacturer</key>
     <string>Black Foundry</string>
     <key>openTypeNameManufacturerURL</key>
