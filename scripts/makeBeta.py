@@ -8,7 +8,7 @@ import os
 prfx = str(datetime.now()).split('.')[0].replace(":", "-").replace(" ", "_")
 
 # make the beta font
-ufo = Font('sources/Garima.ufo')
+ufo = Font('Sources/Garima.ufo')
 otf = compileOTF(ufo, removeOverlaps=True)
 if not os.path.exists('beta'):
     os.makedirs('beta')
