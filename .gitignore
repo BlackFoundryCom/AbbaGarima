@@ -3,7 +3,9 @@ venv*
 fonts*
 reports*
 proofs*
+proofing*
 checks*
+beta*
 instances*
 *.egg*
 *__pycache__
