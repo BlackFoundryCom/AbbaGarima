@@ -29,6 +29,8 @@ jobs:
           python -m pip install drawbot-skia
           python -m pip install ufo2ft
           python -m pip install defcon
+          python -m pip install gftools
+          python -m pip install protobuf==3.20.1
           
       - name: Build font
         run: |

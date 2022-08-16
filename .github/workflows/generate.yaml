@@ -1,0 +1,156 @@
+name: Generate
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  issues:
+    types:
+      - labeled
+  release:
+    types: [created]
+  # project_card:
+  #   types: [moved]
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    if: contains(github.event.issue.labels.*.name, 'READY') || contains(github.event.issue.labels.*.name, 'DONE') || github.event_name == 'workflow_dispatch' || github.event_name == 'release'
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python '3.10'
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Generate zip file name
+        id: zip-name
+        shell: bash
+        # Set the archive name to repo name + "-assets" e.g "MavenPro-assets"
+        run: echo "ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-fonts" >> $GITHUB_ENV
+
+      - name: Install dependencies
+        run: |
+          git config --global url."https://${{ secrets.SECRET_TOKEN }}@github".insteadOf https://github
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Font Preprocessors
+        run: |
+          preprocess
+
+      - name: Bump font revision for release
+        if: github.event_name == 'release'
+        run: |
+          TAG_NAME=${GITHUB_REF/refs\/tags\//}
+          bumpfontrevision --version-tag $TAG_NAME;
+
+      - name: Run Font Check
+        run: |
+          check
+
+      - name: Storing checks log
+        uses: actions/upload-artifact@master
+        with:
+          name: checks
+          path: checks
+          retention-days: 5
+
+      - name: Run Font Build
+        run: |
+          build
+
+      - name: Storing instances
+        uses: actions/upload-artifact@master
+        with:
+          name: instances
+          path: instances
+          retention-days: 5
+
+      - name: Storing generated font
+        uses: actions/upload-artifact@master
+        with:
+          name: ${{ env.ZIP_NAME }}
+          path: fonts
+          retention-days: 5
+
+      - name: Run Font Report
+        run: |
+          report
+
+      - name: Storing reports
+        if: always()
+        uses: actions/upload-artifact@master
+        with:
+          name: reports
+          path: reports
+          retention-days: 5
+          
+      - name: Run Font Report
+        run: |
+          proof
+
+      - name: Storing proofs
+        if: always()
+        uses: actions/upload-artifact@master
+        with:
+          name: proofs
+          path: proofs
+          retention-days: 5
+
+    outputs:
+      zip_name: ${{ env.ZIP_NAME }}
+
+  release:
+    # only run if the commit is tagged...
+    if: github.event_name == 'release'
+    # ... and it builds successfully
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    env:
+      ZIP_NAME: ${{ needs.build.outputs.zip_name }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download artefact files
+        uses: actions/download-artifact@v2
+        with:
+          name: ${{ env.ZIP_NAME }}
+          path: ${{ env.ZIP_NAME }}
+
+      - name: Zip files
+        run: zip -r ${{ env.ZIP_NAME }}.zip ${{ env.ZIP_NAME }}
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ env.ZIP_NAME }}.zip
+          asset_name: ${{ env.ZIP_NAME }}.zip
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "Production ready fonts"
+
+      - name: Upload fonts to commerce server
+        run: |
+          curl -X 'POST' \
+            '${{ secrets.WEBSITE_RELEASE_UPLOAD_URL }}' \
+            '--insecure' \
+            -H 'accept: */*' \
+            -H 'Authorization: Bearer ${{ secrets.WEBSITE_RELEASE_UPLOAD_SECRET }}' \
+            -H 'Content-Type: multipart/form-data' \
+            -F 'archive=@${{ env.ZIP_NAME }}.zip;type=application/zip'
