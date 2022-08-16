@@ -7,3 +7,5 @@ fontTools>=4.28.5
 ufoLib2==0.13
 fontbakery
 dehinter==4.0.0
+gftools
+protobuf==3.20.1
