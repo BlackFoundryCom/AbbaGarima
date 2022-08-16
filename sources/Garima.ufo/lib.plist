@@ -210,6 +210,9 @@
         <key>ascending</key>
         <array>
           <string>.notdef</string>
+          <string>.null</string>
+          <string>CR</string>
+          <string>uni00A0</string>
           <string>space</string>
           <string>uni1200</string>
           <string>uni1201</string>
@@ -470,6 +473,7 @@
           <string>uni1398</string>
           <string>uni1399</string>
           <string>uniF4C2</string>
+          <string>uni1362.ss01</string>
         </array>
         <key>type</key>
         <string>glyphList</string>
@@ -503,11 +507,12 @@
     <string>curve</string>
     <key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
     <integer>1</integer>
-    <key>com.typemytype.robofont.smartSets.uniqueKey</key>
-    <string>4793955408</string>
     <key>public.glyphOrder</key>
     <array>
       <string>.notdef</string>
+      <string>.null</string>
+      <string>CR</string>
+      <string>uni00A0</string>
       <string>space</string>
       <string>uni1200</string>
       <string>uni1201</string>

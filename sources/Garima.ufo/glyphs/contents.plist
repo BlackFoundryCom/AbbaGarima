@@ -4,8 +4,14 @@
   <dict>
     <key>.notdef</key>
     <string>_notdef.glif</string>
+    <key>.null</key>
+    <string>_null.glif</string>
+    <key>CR</key>
+    <string>C_R_.glif</string>
     <key>space</key>
     <string>space.glif</string>
+    <key>uni00A0</key>
+    <string>uni00A_0.glif</string>
     <key>uni1200</key>
     <string>uni1200.glif</string>
     <key>uni1201</key>
