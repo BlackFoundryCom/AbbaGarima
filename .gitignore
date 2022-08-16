@@ -1,0 +1,9 @@
+*DS_Store
+venv*
+fonts*
+reports*
+proofs*
+checks*
+instances*
+*.egg*
+*__pycache__
