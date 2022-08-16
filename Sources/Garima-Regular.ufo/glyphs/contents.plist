@@ -176,6 +176,8 @@
     <string>uni1274.glif</string>
     <key>uni1275</key>
     <string>uni1275.glif</string>
+    <key>uni1275.ss01</key>
+    <string>uni1275.ss01.glif</string>
     <key>uni1276</key>
     <string>uni1276.glif</string>
     <key>uni1277</key>
@@ -270,6 +272,8 @@
     <string>uni12C_C_.glif</string>
     <key>uni12CD</key>
     <string>uni12C_D_.glif</string>
+    <key>uni12CD.ss01</key>
+    <string>uni12C_D_.ss01.glif</string>
     <key>uni12CE</key>
     <string>uni12C_E_.glif</string>
     <key>uni12D0</key>

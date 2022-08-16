@@ -3,16 +3,18 @@ languagesystem DFLT dflt;
 languagesystem latn dflt;
 languagesystem ethi dflt;
 #< languagesystem
+
 feature ss01 {
 # Stylistic Set 01–20
-
 #> feature
+  sub uni1275 by uni1275.ss01;
+  sub uni12CD by uni12CD.ss01;
   sub uni1362 by uni1362.ss01;
 #< feature
 } ss01;
+
 feature salt {
 # Stylistic Alternates
-
 #> feature
   sub uni1362 from [uni1362.ss01];
 #< feature
