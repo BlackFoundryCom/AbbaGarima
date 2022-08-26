@@ -7,17 +7,24 @@ languagesystem ethi dflt;
 feature ss01 {
 # Stylistic Set 01–20
 #> feature
+  sub uni1215 by uni1215.ss01;
+  sub uni1245 by uni1245.ss01;
   sub uni1275 by uni1275.ss01;
   sub uni12CD by uni12CD.ss01;
+  sub uni1355 by uni1355.ss01;
   sub uni1362 by uni1362.ss01;
 #< feature
 } ss01;
 
+
 feature salt {
 # Stylistic Alternates
 #> feature
+  sub uni1215 by uni1215.ss01;
+  sub uni1245 by uni1245.ss01;
   sub uni1275 by uni1275.ss01;
   sub uni12CD by uni12CD.ss01;
+  sub uni1355 by uni1355.ss01;
   sub uni1362 by uni1362.ss01;
 #< feature
 } salt;
