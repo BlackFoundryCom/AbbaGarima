@@ -8,6 +8,8 @@
     <string>_null.glif</string>
     <key>CR</key>
     <string>C_R_.glif</string>
+    <key>chirho</key>
+    <string>chirho.glif</string>
     <key>space</key>
     <string>space.glif</string>
     <key>uni00A0</key>
@@ -538,7 +540,13 @@
     <string>uni1398.glif</string>
     <key>uni1399</key>
     <string>uni1399.glif</string>
+    <key>uniF44B</key>
+    <string>uniF_44B_.glif</string>
     <key>uniF4C2</key>
     <string>uniF_4C_2.glif</string>
+    <key>uniF4E1</key>
+    <string>uniF_4E_1.glif</string>
+    <key>uniF4E2</key>
+    <string>uniF_4E_2.glif</string>
   </dict>
 </plist>

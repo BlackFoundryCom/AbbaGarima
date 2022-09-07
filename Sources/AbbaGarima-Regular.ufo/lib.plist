@@ -80544,6 +80544,10 @@
       <string>uni1398</string>
       <string>uni1399</string>
       <string>uniF4C2</string>
+      <string>uniF44B</string>
+      <string>uniF4E1</string>
+      <string>uniF4E2</string>
+      <string>chirho</string>
     </array>
     <key>public.postscriptNames</key>
     <dict>
@@ -80685,6 +80689,8 @@
       <string>uni1245.ss01</string>
       <key>uni1246</key>
       <string>uni1246</string>
+      <key>uni1247</key>
+      <string>uni1247</string>
       <key>uni1248</key>
       <string>uni1248</string>
       <key>uni124A</key>
