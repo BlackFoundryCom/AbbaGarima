@@ -11,7 +11,7 @@
     <key>descender</key>
     <integer>-250</integer>
     <key>familyName</key>
-    <string>Garima</string>
+    <string>Abba Garima</string>
     <key>guidelines</key>
     <array>
       <dict>
@@ -54,7 +54,7 @@
     <key>openTypeHheaLineGap</key>
     <integer>0</integer>
     <key>openTypeNameDescription</key>
-    <string>Garima by Black[Foundry]</string>
+    <string>Abba Garima by Black[Foundry]</string>
     <key>openTypeNameDesigner</key>
     <string>Jérémie Hornus, Gaëtan Baehr, Daniel Yacob</string>
     <key>openTypeNameDesignerURL</key>
@@ -85,7 +85,7 @@
     <key>openTypeNameSampleText</key>
     <string>በስመ፡አብ፡ወወልድ፡ወመንፈስ፡ቅዱስ፡፩ዱ፡አምላክ።</string>
     <key>openTypeNameUniqueID</key>
-    <string>Garima-Regular;BLCK;1.000</string>
+    <string>AbbaGarima-Regular;BLCK;1.000</string>
     <key>openTypeNameVersion</key>
     <string>Version 1.000</string>
     <key>openTypeNameWWSFamilyName</key>
@@ -152,13 +152,13 @@
     <key>postscriptWeightName</key>
     <string>regular</string>
     <key>styleMapFamilyName</key>
-    <string>Garima</string>
+    <string>Abba Garima</string>
     <key>styleMapStyleName</key>
     <string>regular</string>
     <key>styleName</key>
     <string>Regular</string>
     <key>trademark</key>
-    <string>Garima is a trademark of Black Foundry</string>
+    <string>Abba Garima is a trademark of Black Foundry</string>
     <key>unitsPerEm</key>
     <integer>1000</integer>
     <key>versionMajor</key>
