@@ -67,6 +67,21 @@
     <string>Black Foundry</string>
     <key>openTypeNameManufacturerURL</key>
     <string>black-foundry.com</string>
+    <key>openTypeNameRecords</key>
+    <array>
+      <dict>
+        <key>encodingID</key>
+        <integer>1</integer>
+        <key>languageID</key>
+        <integer>1118</integer>
+        <key>nameID</key>
+        <integer>1</integer>
+        <key>platformID</key>
+        <integer>3</integer>
+        <key>string</key>
+        <string>አባ ገሪማ</string>
+      </dict>
+    </array>
     <key>openTypeNameSampleText</key>
     <string>በስመ፡አብ፡ወወልድ፡ወመንፈስ፡ቅዱስ፡፩ዱ፡አምላክ።</string>
     <key>openTypeNameUniqueID</key>
