@@ -8,7 +8,7 @@ import os
 prfx = str(datetime.now()).split('.')[0].replace(":", "-").replace(" ", "_")
 
 # make the beta font
-ufo = Font('Sources/Garima-Regular.ufo')
+ufo = Font('Sources/AbbaGarima-Regular.ufo')
 otf = compileOTF(ufo, removeOverlaps=True)
 if not os.path.exists('beta'):
     os.makedirs('beta')
@@ -57,7 +57,7 @@ doc = PDFDocument(pdfPath)
 
 with doc.drawing() as db:
 	db.newPage(pageWidth, pageHeight)
-	db.font('beta/%s_Garima.otf' % prfx)
+	db.font('beta/%s_AbbaGarima.otf' % prfx)
 	db.fontSize(fSize)
 
 	txt = open('proofing/glyphSet.txt', 'r').readlines()
