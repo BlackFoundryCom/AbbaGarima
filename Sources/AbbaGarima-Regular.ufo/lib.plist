@@ -80557,6 +80557,8 @@
       <string>.null</string>
       <key>CR</key>
       <string>CR</string>
+      <key>chirho</key>
+      <string>chirho</string>
       <key>space</key>
       <string>space</string>
       <key>uni00A0</key>
@@ -80689,8 +80691,6 @@
       <string>uni1245.ss01</string>
       <key>uni1246</key>
       <string>uni1246</string>
-      <key>uni1247</key>
-      <string>uni1247</string>
       <key>uni1248</key>
       <string>uni1248</string>
       <key>uni124A</key>
@@ -81089,8 +81089,14 @@
       <string>uni1398</string>
       <key>uni1399</key>
       <string>uni1399</string>
+      <key>uniF44B</key>
+      <string>uniF44B</string>
       <key>uniF4C2</key>
       <string>uniF4C2</string>
+      <key>uniF4E1</key>
+      <string>uniF4E1</string>
+      <key>uniF4E2</key>
+      <string>uniF4E2</string>
     </dict>
   </dict>
 </plist>

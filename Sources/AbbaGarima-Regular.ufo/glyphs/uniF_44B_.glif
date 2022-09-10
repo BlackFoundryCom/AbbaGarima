@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uniF44B" format="2">
   <advance width="983"/>
   <unicode hex="F44B"/>
@@ -173,9 +173,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.6,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.6,0.6,1</string>
+    </dict>
   </lib>
 </glyph>
