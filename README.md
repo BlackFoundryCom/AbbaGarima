@@ -3,14 +3,14 @@
 ## Summary
 This is the source repository of the Garima font project. The Garima typeface has been designed in the style of the *oldest* known Geʾez manuscript, the Abba Garima Gospel 2, which dates from the 4th century AD. 
 
-The Garima font is a free font distributed under the Open Font License ([OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)).  The initial release of the font has been developed by [Black Foundry](https://black-foundry.com/) and sponsored by the Geʾez Frontier Foundation. The Garima font provides all letters, numerals and punctuation used by the Geʾez language (260 symbols total). Contact Black Foundry to obtain a commercial version of the font that will cover modern languages (Amharic, Tigrinya, etc.).
+The Garima font is a free font distributed under the Open Font License ([OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)).  The initial release of the font has been developed by [Black Foundry](https://black-foundry.com/) and sponsored by the Geʾez Frontier Foundation. The Garima font provides all letters, numerals and punctuation used by the Geʾez language (264 symbols total). Contact Black Foundry to obtain a commercial version of the font that will cover modern languages (Amharic, Tigrinya, etc.).
 
 ## Introduction
 <img src="images/GedileAbaGerima-Image3.png" style="width:300px; float:left; margin-right:10px" align="left"> The Abba Garima Gospels are a collection of Geʾez language manuscripts in the care at the Ethiopian Orthodox monks of the Énda Abba Garima Monastary (እንዳ አባ ገሪማ). The Gospels have been at the monastary since at least the 6th century AD and are recognized as the oldest surviving Geʾez manuscripts as well as *the earliest* illuminated Christian gospels found *anywhere* in the world.
 
 The earliest of the Abba Garima Gospels has been radio carbon dated to between 330 - 650 AD<sup>2</sup>, with 390 AD being a reasonable assumed year of its creation supported by other evidence. This first Gospel is believed to have been rendered by the hand of Saint Garima with support from the heavens. One of many miracles attributed to the saint was that he wrote and illuminated the gospel's 350 pages in a single day, a feat made possible when God stopped the sun and held in the sky so Saint Garima could endeavor to complete the task. 
 
-The lettering style of Saint Garima is then the first and oldest example of Geʾez script (aka “Ethiopic”) calligraphy known to the world today as anything prepared earlier has since been lost to the passage of time. The saint is also our first known Geʾez scribe whose work we can still view and enjoy today. <!-- Abba Garima may have also been responsible for completing the syllabification of the Geʾez alphabet that was initiated by Abba Selamta. -->
+The lettering style of Saint Garima is then the first and oldest example of Geʾez script (aka “Ethiopic”) calligraphy known to the world today as anything prepared earlier has since been lost to the passage of time. The saint is also our first known Geʾez scribe whose work we can still view and enjoy today. 
 
 With the Garima typeface we have tried to honor the divine work of Saint Garima and we have made our best effort to capture his original Geʾez style as he presented it for all the world to see. We hope that the font will be useful to researchers, educators, religious scholars, and enthusiasts alike who will use and so help us keep Saint Garima’s work alive for future generations.
 
@@ -36,14 +36,13 @@ Three additional letter variants have been added where the Garima 6<sup>th</sup>
  <img src="images/Garima-Stylistical-Set-01.png">
  
  
-## Letter Additions
+## Symbol Additions
 
-One special mark has been added to the font that is very frequently used in the Abba Garima Gospel. The mark is a mecheresha that accompanies the Ethiopic fullstop in the gospel manuscript, it can be seen in the follow image:
+A number of special symbols occur regularly in the columnar margins of the Abba Garima Gospel. The mark is a mecheresha that accompanies the Ethiopic fullstop in the gospel manuscript, it can be seen in the follow image:
 
-<img src="images/Garima-F4C2.png" height="60px">
+ <img src="images/Garima-Margin-Symbols.png">
 
-The mark is encoded in the Unicode Private Use Area at address U+F4C2 in keeping with the [EMUFI Project](http://emufi.geez.org/) assignment for the symbol.
-
+The non-standard marks are encoded in the Unicode Private Use Area in keeping with the [EMUFI Project](http://emufi.geez.org/) address assignments. The [Unicode input](https://en.wikipedia.org/wiki/Unicode_input) article at Wikipedia is a useful guide for how to type Unicode characters by their address on various operating systems.
 
 ## Samples
 
