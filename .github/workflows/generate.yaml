@@ -73,13 +73,6 @@ jobs:
         run: |
           build
 
-      - name: Storing instances
-        uses: actions/upload-artifact@master
-        with:
-          name: instances
-          path: instances
-          retention-days: 5
-
       - name: Storing generated font
         uses: actions/upload-artifact@master
         with:
