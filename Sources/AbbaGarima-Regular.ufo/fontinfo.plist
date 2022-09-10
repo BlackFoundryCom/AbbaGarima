@@ -88,10 +88,6 @@
     <string>AbbaGarima-Regular;BLCK;1.000</string>
     <key>openTypeNameVersion</key>
     <string>Version 1.000</string>
-    <key>openTypeNameWWSFamilyName</key>
-    <string>Garima</string>
-    <key>openTypeNameWWSSubfamilyName</key>
-    <string>Regular</string>
     <key>openTypeOS2CodePageRanges</key>
     <array>
       <integer>0</integer>
@@ -120,9 +116,9 @@
     <key>openTypeOS2WidthClass</key>
     <integer>5</integer>
     <key>openTypeOS2WinAscent</key>
-    <integer>850</integer>
+    <integer>1137</integer>
     <key>openTypeOS2WinDescent</key>
-    <integer>151</integer>
+    <integer>159</integer>
     <key>postscriptBlueFuzz</key>
     <integer>0</integer>
     <key>postscriptBlueScale</key>
